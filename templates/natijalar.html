@@ -1,0 +1,15 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person List</title>
+</head>
+<body>
+    <h1>Persons:</h1>
+    <ul>
+        {% for person in persons %}
+        <li>{{ person.familya }} {{ person.ism }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <div class="form-group">
+
+            {{ form.book_name }}
+        </div>
+        <div class="mb-3">
+
+            {{ form.book_file }}
+        </div>
+        <input type="submit" value="Yuklash_pdf">
+    </form>
+</body>
+</html>

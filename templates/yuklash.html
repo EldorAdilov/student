@@ -1,0 +1,26 @@
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form.name }}
+
+    </div>
+    <div class="form-group">
+        {{ form.image }}
+
+    </div>
+    <input type="submit" class="btn btn-primary">Jo'natish</input>
+</form>
+<br>
+<h1>Users</h1>
+    <ul>
+        <li>{{ person.familya }} - {{ person.ism }}</li>
+
+    </ul>
+{% endblock %}
+
+
+
